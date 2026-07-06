@@ -29,29 +29,29 @@
 <p>A few quick details so we know who we're working with.</p>
 </div>
 <div class="field-group">
-<label>Your full name</div>
+<label>Your full name</label>
 <input type="text" id="clientName" placeholder="e.g. Sarah Mitchell" />
 </div>
 <div class="field-group">
-<label>Email address</div>
+<label>Email address</label>
 <input type="email" id="clientEmail" placeholder="sarah@company.com" />
 </div>
 <div class="field-group">
-<label>Phone number</div>
+<label>Phone number</label>
 <input type="text" id="clientPhone" placeholder="e.g. +61 4XX XXX XXX" />
 </div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
 <div class="field-group">
-<label>Organisation / Business</div>
+<label>Organisation / Business</label>
 <input type="text" id="orgName" placeholder="e.g. Acme Training Co." />
 </div>
 <div class="field-group">
-<label>Your role</div>
+<label>Your role</label>
 <input type="text" id="clientRole" placeholder="e.g. Head of L&D" />
 </div>
 </div>
 <div class="field-group">
-<label>Industry / sector</div>
+<label>Industry / sector</label>
 <select id="industry">
 <option value="" disabled selected>Select your industry</option>
 <option>Corporate Training & L&D</option>
@@ -67,7 +67,7 @@
 </select>
 </div>
 <div class="field-group">
-<label>Website (optional)</div>
+<label>Website (optional)</label>
 <input type="url" id="website" placeholder="https://yourwebsite.com" />
 </div>
 <div class="btn-row">
@@ -81,49 +81,49 @@
 <p>Choose the type of learning experience you have in mind. You can select more than one.</p>
 </div>
 <div class="card-grid" id="productTypeGrid">
-<div class="card-option" role="checkbox" aria-checked="false" tabindex="0">
+<div class="card-option" role="checkbox" aria-checked="false" tabindex="0" onclick="this.classList.toggle('selected');this.setAttribute('aria-checked',this.classList.contains('selected'))" onkeydown="if(event.key===' '||event.key==='Enter'){event.preventDefault();this.click()}">
 <div class="card-icon teal">⚡</div>
 <div class="card-title">Short-form learning</div>
 <div class="card-desc">Bite-sized modules, 2–5 min videos</div>
 </div>
-<div class="card-option" role="checkbox" aria-checked="false" tabindex="0">
+<div class="card-option" role="checkbox" aria-checked="false" tabindex="0" onclick="this.classList.toggle('selected');this.setAttribute('aria-checked',this.classList.contains('selected'))" onkeydown="if(event.key===' '||event.key==='Enter'){event.preventDefault();this.click()}">
 <div class="card-icon coral">🎓</div>
 <div class="card-title">Masterclass</div>
 <div class="card-desc">In-depth, expert-led premium series</div>
 </div>
-<div class="card-option" role="checkbox" aria-checked="false" tabindex="0">
+<div class="card-option" role="checkbox" aria-checked="false" tabindex="0" onclick="this.classList.toggle('selected');this.setAttribute('aria-checked',this.classList.contains('selected'))" onkeydown="if(event.key===' '||event.key==='Enter'){event.preventDefault();this.click()}">
 <div class="card-icon amber">🎬</div>
 <div class="card-title">Training videos</div>
 <div class="card-desc">Instructional or compliance content</div>
 </div>
-<div class="card-option" role="checkbox" aria-checked="false" tabindex="0">
+<div class="card-option" role="checkbox" aria-checked="false" tabindex="0" onclick="this.classList.toggle('selected');this.setAttribute('aria-checked',this.classList.contains('selected'))" onkeydown="if(event.key===' '||event.key==='Enter'){event.preventDefault();this.click()}">
 <div class="card-icon purple">🚀</div>
 <div class="card-title">Onboarding program</div>
 <div class="card-desc">Employee or customer onboarding</div>
 </div>
-<div class="card-option" role="checkbox" aria-checked="false" tabindex="0">
+<div class="card-option" role="checkbox" aria-checked="false" tabindex="0" onclick="this.classList.toggle('selected');this.setAttribute('aria-checked',this.classList.contains('selected'))" onkeydown="if(event.key===' '||event.key==='Enter'){event.preventDefault();this.click()}">
 <div class="card-icon blue">📱</div>
 <div class="card-title">Micro-course</div>
 <div class="card-desc">Mobile-first, self-paced learning</div>
 </div>
-<div class="card-option" role="checkbox" aria-checked="false" tabindex="0">
+<div class="card-option" role="checkbox" aria-checked="false" tabindex="0" onclick="this.classList.toggle('selected');this.setAttribute('aria-checked',this.classList.contains('selected'))" onkeydown="if(event.key===' '||event.key==='Enter'){event.preventDefault();this.click()}">
 <div class="card-icon teal">💡</div>
 <div class="card-title">Explainer series</div>
 <div class="card-desc">Concept-led animated or live explainers</div>
 </div>
-<div class="card-option" role="checkbox" aria-checked="false" tabindex="0">
+<div class="card-option" role="checkbox" aria-checked="false" tabindex="0" onclick="this.classList.toggle('selected');this.setAttribute('aria-checked',this.classList.contains('selected'))" onkeydown="if(event.key===' '||event.key==='Enter'){event.preventDefault();this.click()}">
 <div class="card-icon coral">🤝</div>
 <div class="card-title">Coaching / mentoring</div>
 <div class="card-desc">Guided, structured coaching content</div>
 </div>
-<div class="card-option" role="checkbox" aria-checked="false" tabindex="0">
+<div class="card-option" role="checkbox" aria-checked="false" tabindex="0" onclick="this.classList.toggle('selected');this.setAttribute('aria-checked',this.classList.contains('selected'))" onkeydown="if(event.key===' '||event.key==='Enter'){event.preventDefault();this.click()}">
 <div class="card-icon amber">✏️</div>
 <div class="card-title">Something else</div>
 <div class="card-desc">Tell us in the next step</div>
 </div>
 </div>
 <div class="field-group" style="margin-top:1.5rem">
-<label>Anything else or more detail?</div>
+<label>Anything else or more detail?</label>
 <textarea id="productTypeOther" placeholder="e.g. We want a blended learning experience combining live workshops with on-demand videos…" rows="3"></textarea>
 </div>
 <div class="btn-row">
@@ -138,16 +138,16 @@
 <p>Help us understand what the learning will actually be about.</p>
 </div>
 <div class="field-group">
-<label>Working title or topic name</div>
+<label>Working title or topic name</label>
 <input type="text" id="topicTitle" placeholder="e.g. Effective Leadership for New Managers" />
 </div>
 <div class="field-group">
-<label>Describe the subject matter <button type="button" class="field-tooltip" onclick="this.classList.toggle('open')" onblur="this.classList.remove('open')">?<span class="tip-text">What's the core topic? What will people learn about?</span></button></div>
+<label>Describe the subject matter <button type="button" class="field-tooltip" onclick="this.classList.toggle('open')" onblur="this.classList.remove('open')">?<span class="tip-text">What's the core topic? What will people learn about?</span></button></label>
 <textarea id="topicDescription" maxlength="600" placeholder="Give us a clear overview of the topic. What knowledge, skill, or behaviour does this content address?" rows="4" oninput="updateCounter(this,'topicCounter')"></textarea>
 <div class="char-counter" id="topicCounter">0 / 600</div>
 </div>
 <div class="field-group">
-<label>Do you have existing content or materials?</div>
+<label>Do you have existing content or materials?</label>
 <div class="pill-group" id="existingContent">
 <span class="pill" onclick="togglePill(this)">Yes — scripts / outlines</span>
 <span class="pill" onclick="togglePill(this)">Yes — slide decks</span>
@@ -158,7 +158,7 @@
 </div>
 </div>
 <div class="field-group">
-<label>Subject matter expert (SME) availability</div>
+<label>Subject matter expert (SME) availability</label>
 <select id="smeAvailability">
 <option value="" disabled selected>Select an option</option>
 <option>Yes — I am the SME</option>
@@ -169,7 +169,7 @@
 </select>
 </div>
 <div class="field-group">
-<label>Number of modules / lessons (estimate)</div>
+<label>Number of modules / lessons (estimate)</label>
 <div class="range-wrapper">
 <input type="range" min="1" max="40" value="5" step="1" id="moduleCount" oninput="updateRange(this,'moduleCountVal')"/>
 <div class="range-labels">
@@ -192,11 +192,11 @@
 </div>
 <div class="section-label">Your audience</div>
 <div class="field-group">
-<label>Who is this learning designed for?</div>
+<label>Who is this learning designed for?</label>
 <textarea id="audienceDesc" placeholder="e.g. Mid-level managers across retail stores, aged 25–45, limited tech literacy, mostly mobile users…" rows="3"></textarea>
 </div>
 <div class="field-group">
-<label>Approximate learner count</div>
+<label>Approximate learner count</label>
 <select id="learnerCount">
 <option value="" disabled selected>Expected number of learners</option>
 <option>Under 50</option>
@@ -209,7 +209,7 @@
 </select>
 </div>
 <div class="field-group">
-<label>Learner characteristics</div>
+<label>Learner characteristics</label>
 <div class="pill-group" id="learnerTraits">
 <span class="pill" onclick="togglePill(this)">Beginner level</span>
 <span class="pill" onclick="togglePill(this)">Intermediate level</span>
@@ -224,16 +224,16 @@
 <div class="field-divider"></div>
 <div class="section-label">Learning outcomes</div>
 <div class="field-group">
-<label>What should learners be able to DO after this training?</div>
+<label>What should learners be able to DO after this training?</label>
 <textarea id="learningOutcomes" maxlength="600" placeholder="e.g. Confidently run 1-on-1s, handle difficult feedback conversations, and use our performance review tool…" rows="4" oninput="updateCounter(this,'outcomesCounter')"></textarea>
 <div class="char-counter" id="outcomesCounter">0 / 600</div>
 </div>
 <div class="field-group">
-<label>What problem does this training solve?</div>
+<label>What problem does this training solve?</label>
 <textarea id="problemStatement" placeholder="e.g. New managers are struggling to retain team members — engagement scores are low and turnover is high..." rows="3"></textarea>
 </div>
 <div class="field-group">
-<label>How will success be measured?</div>
+<label>How will success be measured?</label>
 <div class="pill-group" id="successMeasures">
 <span class="pill" onclick="togglePill(this)">Assessment / quiz scores</span>
 <span class="pill" onclick="togglePill(this)">Completion rates</span>
@@ -257,7 +257,7 @@
 </div>
 <div class="section-label">Look & feel</div>
 <div class="field-group">
-<label>Tone of voice</div>
+<label>Tone of voice</label>
 <div class="pill-group" id="toneOfVoice">
 <span class="pill" onclick="togglePill(this)">Warm & conversational</span>
 <span class="pill" onclick="togglePill(this)">Professional & authoritative</span>
@@ -268,7 +268,7 @@
 </div>
 </div>
 <div class="field-group">
-<label>Visual style preference</div>
+<label>Visual style preference</label>
 <div class="pill-group" id="visualStyle">
 <span class="pill" onclick="togglePill(this)">Animated / illustrated</span>
 <span class="pill" onclick="togglePill(this)">Talking head / presenter</span>
@@ -280,7 +280,7 @@
 </div>
 </div>
 <div class="field-group">
-<label>Do you have brand guidelines?</div>
+<label>Do you have brand guidelines?</label>
 <select id="brandGuidelines">
 <option value="" disabled selected>Select an option</option>
 <option>Yes — I'll share them</option>
@@ -292,7 +292,7 @@
 <div class="field-divider"></div>
 <div class="section-label">Delivery & technology</div>
 <div class="field-group">
-<label>Where will learners access this content?</div>
+<label>Where will learners access this content?</label>
 <div class="pill-group" id="deliveryPlatform">
 <span class="pill" onclick="togglePill(this)">Our LMS (e.g. Moodle, Cornerstone)</span>
 <span class="pill" onclick="togglePill(this)">Your hosted platform</span>
@@ -303,7 +303,7 @@
 </div>
 </div>
 <div class="field-group">
-<label>Interactivity required</div>
+<label>Interactivity required</label>
 <div class="pill-group" id="interactivity">
 <span class="pill" onclick="togglePill(this)">Quizzes / knowledge checks</span>
 <span class="pill" onclick="togglePill(this)">Branching scenarios</span>
@@ -329,11 +329,11 @@
 <div class="section-label">Timeline</div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
 <div class="field-group">
-<label>Ideal launch date</div>
+<label>Ideal launch date</label>
 <input type="text" id="launchDate" placeholder="e.g. July 2025 or Q3 2025" />
 </div>
 <div class="field-group">
-<label>Urgency</div>
+<label>Urgency</label>
 <select id="urgency">
 <option value="" disabled selected>How urgent?</option>
 <option>ASAP — within 4 weeks</option>
@@ -344,13 +344,13 @@
 </div>
 </div>
 <div class="field-group">
-<label>Are there any hard deadlines? <button type="button" class="field-tooltip" onclick="this.classList.toggle('open')" onblur="this.classList.remove('open')">?<span class="tip-text">e.g. regulatory deadlines, product launches, annual events.</span></button></div>
+<label>Are there any hard deadlines? <button type="button" class="field-tooltip" onclick="this.classList.toggle('open')" onblur="this.classList.remove('open')">?<span class="tip-text">e.g. regulatory deadlines, product launches, annual events.</span></button></label>
 <input type="text" id="hardDeadline" placeholder="e.g. Must be live before our annual conference on 12 September" />
 </div>
 <div class="field-divider"></div>
 <div class="section-label">Budget</div>
 <div class="field-group">
-<label>Indicative budget range</div>
+<label>Indicative budget range</label>
 <select id="budget">
 <option value="" disabled selected>Select a range</option>
 <option>Under $5,000</option>
@@ -365,7 +365,7 @@
 <div class="hint">We respect confidentiality — this helps us right-size our proposal.</div>
 </div>
 <div class="field-group">
-<label>Has budget been approved?</div>
+<label>Has budget been approved?</label>
 <div class="pill-group" id="budgetApproval">
 <span class="pill" onclick="togglePill(this)">Yes — approved</span>
 <span class="pill" onclick="togglePill(this)">Provisionally approved</span>
@@ -376,11 +376,11 @@
 <div class="field-divider"></div>
 <div class="section-label">Final thoughts</div>
 <div class="field-group">
-<label>Anything else we should know?</div>
+<label>Anything else we should know?</label>
 <textarea id="finalNotes" placeholder="e.g. We've had a bad experience with a previous vendor, we're open to a phased approach, or we'd love to see some past examples of your work first…" rows="4"></textarea>
 </div>
 <div class="field-group">
-<label>How did you hear about us?</div>
+<label>How did you hear about us?</label>
 <select id="referral">
 <option value="" disabled selected>Select an option</option>
 <option>Word of mouth / referral</option>
@@ -470,16 +470,7 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }
-  document.querySelectorAll('.card-option').forEach(card => {
-    const toggle = () => {
-      const selected = card.classList.toggle('selected');
-      card.setAttribute('aria-checked', selected);
-    };
-    card.addEventListener('click', toggle);
-    card.addEventListener('keydown', e => {
-      if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); toggle(); }
-    });
-  });
+  // card selection handled via onclick
   function togglePill(el) {
     el.classList.toggle('selected');
   }
